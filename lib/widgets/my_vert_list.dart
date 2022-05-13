@@ -79,20 +79,21 @@ class MyVertList extends StatelessWidget {
                               fontWeight: FontWeight.normal),
                         ),
                         RatingBar.builder(
-                            initialRating: courseRating,
-                            minRating: 1,
-                            direction: Axis.horizontal,
-                            allowHalfRating: true,
-                            itemCount: 5,
-                            itemSize: 18,
-                            itemPadding: EdgeInsets.symmetric(horizontal: 1),
-                            itemBuilder: (context, _) => const Icon(
-                                  Icons.star,
-                                  color: Color(0xffF4C465),
-                                ),
-                            onRatingUpdate: (rating) {
-                              print(rating);
-                            })
+                          initialRating: courseRating,
+                          minRating: 1,
+                          direction: Axis.horizontal,
+                          allowHalfRating: true,
+                          itemCount: 5,
+                          itemSize: 18,
+                          itemPadding: EdgeInsets.symmetric(horizontal: 1),
+                          itemBuilder: (context, _) => const Icon(
+                            Icons.star,
+                            color: Color(0xffF4C465),
+                          ),
+                          onRatingUpdate: (rating) {
+                            print(rating);
+                          },
+                        ),
                       ],
                     ),
                   )
